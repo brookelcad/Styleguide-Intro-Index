@@ -6,10 +6,10 @@ body{
     font-weight: 400;
     font-family: Helvetica, Arial sans-serif;
     color: #333;
-    margin-top: 100px
+    margin-top: 100px;
 }
 img {
-    max-width 100%
+    max-width: 100%;
 }
 
 /*Home Styles
@@ -59,7 +59,7 @@ nav .topnav li.mobile {
     }
     nav .eight.columns,
     nav .four.columns{
-        width: 48%;{
+        width: 48%;
     
         }
     }
@@ -83,8 +83,19 @@ nav .topnav li.mobile {
         display: inline-block;
         vertical-align: top;
     }
-    topnav a {
+    .topnav a {
         padding: 20px;
+        border-bottom: 4px solid #FFF;
+        display: block;
+        transition: background-color 0.8s ease;
+    }
+    .topnav a.active {
+        padding: 20px;
+        border-bottom: 4px solid #7453EF;
+        color: #7453EF;
+    }
+    .topnav a:hover {
+        background: #7453EF;
         border-bottom: 4px solid #7453EF;
         color: #FFF;
         text-decoration: none;
@@ -137,7 +148,7 @@ ul.breadcrumb {
     ul.breadcrumb li {
     display: inline;
 }
-    ul.breadcrumb li+li: before{
+    ul.breadcrumb li+li:before{
     padding: 8px;
     color: black;
     content: "/\00a0";
@@ -147,18 +158,18 @@ ul.breadcrumb {
 ------------------------------------------------*/
     .container{
         position: relative;
-        max-width: 106px;
+        max-width: 1060px;
         margin: 0 auto;
         padding: 0 20px;
     }
     .column,
-    .colums {
+    .columns {
         display: inline-block;
         vertical-align: top;
         margin-left: 3%;
     }
-    .column: first-child,
-    .columns: first-child {
+    .column:first-child,
+    .columns:first-child {
         margin-left: 0;
     }
     .one.column {
